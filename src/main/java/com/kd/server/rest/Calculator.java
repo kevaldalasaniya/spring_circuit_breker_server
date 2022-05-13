@@ -9,10 +9,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/calculate")
 public class Calculator {
 
+   
+    
 	@GetMapping("{op1}/{op2}")
 	public int calculate(@PathVariable int op1, @PathVariable int op2) {
 
-		return op1 + op2;
+		return (op1+op2);
 	}
+	
+	
 
 }
